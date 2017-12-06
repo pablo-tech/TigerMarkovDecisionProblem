@@ -1,0 +1,808 @@
+jdk/Contents/Home
+java version "1.8.0_25"
+Java(TM) SE Runtime Environment (build 1.8.0_25-b17)
+Java HotSpot(TM) 64-Bit Server VM (build 25.25-b02, mixed mode)
+javac 1.8.0_25
+-Xmx4096M -Xss128M
+.:/Users/pablo/git/JavaService--TSDB-Python/target/tsdb-main-0.0.0-SNAPSHOT-jar-with-dependencies.jar:
+ONENOW_LOG_LEVEL=FINE
+ONENOW_LOG_STYLE=CONSOLE
+ONENOW_LOG_LEVEL=FINE
+ONENOW_LOG_STYLE=CONSOLE
+Picked up JAVA_TOOL_OPTIONS: -Xmx4096M -Xss128M
+Scala code runner version 2.11.8 -- Copyright 2002-2016, LAMP/EPFL
+Picked up JAVA_TOOL_OPTIONS: -Xmx4096M -Xss128M
+Apache Maven 3.3.3 (7994120775791599e205a5524ec3e0dfe41d4a06; 2015-04-22T04:57:37-07:00)
+Maven home: /Users/pablo/apache-maven-3.3.3
+Java version: 1.8.0_25, vendor: Oracle Corporation
+Java home: /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "mac os x", version: "10.13.1", arch: "x86_64", family: "mac"
+PATH= /Users/pablo/anaconda/bin:/Users/pablo/.sdkman/candidates/groovy/current/bin:/Users/pablo/.sdkman/candidates/gradle/current/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/Users/pablo/groovy-2.4.12/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/bin:/Users/pablo/scala-2.11.8/bin:/Users/pablo/apache-maven-3.3.3/bin:/Users/pablo/apache-maven-3.3.3/bin:/Users/pablo/apache-tomcat-7.0.65/bin:/usr/local/bin
+pablo@NeverBeenBetter ~/git/TigerMarkovDecisionProblem $ ls
+tigerV4-POMDP.jl        tigerV4-test.jl         tigerV4-world.jl
+pablo@NeverBeenBetter ~/git/TigerMarkovDecisionProblem $ julia tigerV4-test.jl
+INFO: Cloning QMDP from https://github.com/JuliaPOMDP/QMDP.jl
+Package already installed
+INFO: Cloning SARSOP from https://github.com/JuliaPOMDP/SARSOP.jl
+Package already installed
+INFO: Cloning QMDP from https://github.com/JuliaPOMDP/QMDP.jl
+Package already installed
+INFO: Cloning SARSOP from https://github.com/JuliaPOMDP/SARSOP.jl
+Package already installed
+STATE: StateAtDoor(:left, true)
+OBSERVATION: ObservationAtDoor(:right, false)
+WORLD: TigerDp(-1.0, -100.0, 10.0, 0.85, 0.95, Symbol[:left, :right], StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], Symbol[:open_left_door, :open_right_door, :listen_to_doors], ObservationAtDoor[ObservationAtDoor(:left, false), ObservationAtDoor(:right, false)])
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+CAT WORLD PRIOR STATE PDF: POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+CAT WORLD POSTERIOR STATE PDF: POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.68, 0.32])
+STATE INDEX: 1
+CAT WORLD ACTION SPACE: Symbol[:open_left_door, :open_right_door, :listen_to_doors]
+ACTION INDEX: 3
+^^^^^get_state_observation_reward s=StateAtDoor(:left, true) a=listen_to_doors
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:left, true)
+???WHAT_REWAWRD???
+STATE_AT_DOOR POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [1.0, 0.0])
+TRANSITION @TERMINATION: (POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [1.0, 0.0]), POMDPToolbox.SparseCat{Array{ObservationAtDoor,1},Array{Float64,1}}(ObservationAtDoor[ObservationAtDoor(:left, false), ObservationAtDoor(:right, false)], [0.3, 0.7]), 0.0)
+^^^^^get_state_observation_reward s=StateAtDoor(:left, true) a=open_right_door
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:left, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+???WHAT_REWAWRD???
+STATE_AT_DOOR POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+TRANSITION @TERMINATION: (POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5]), POMDPToolbox.SparseCat{Array{ObservationAtDoor,1},Array{Float64,1}}(ObservationAtDoor[ObservationAtDoor(:left, false), ObservationAtDoor(:right, false)], [0.3, 0.7]), 0.0)
+CAT WORLD PRIOR OBSERVATION PDF: POMDPToolbox.SparseCat{Array{ObservationAtDoor,1},Array{Float64,1}}(ObservationAtDoor[ObservationAtDoor(:left, false), ObservationAtDoor(:right, false)], [0.5, 0.5])
+CAT WORLD POSTERIOR STATE PDF: POMDPToolbox.SparseCat{Array{ObservationAtDoor,1},Array{Float64,1}}(ObservationAtDoor[ObservationAtDoor(:left, false), ObservationAtDoor(:right, false)], [0.68, 0.32])
+---REWARD! Killed by cat!!!
+REWARD: -100.0
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:left, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+
+INFO: POMDPs.jl requirements for solve(::QMDPSolver, ::POMDPs.POMDP) and dependencies. ([✔] = implemented correctly; [X] = missing)
+
+For solve(::QMDPSolver, ::POMDPs.POMDP):
+  [No additional requirements]
+For solve(::ValueIterationSolver, ::Union{POMDPs.MDP,POMDPs.POMDP}) (in solve(::QMDPSolver, ::POMDPs.POMDP)):
+  [✔] discount(::TigerDp)
+  [✔] n_states(::TigerDp)
+  [✔] n_actions(::TigerDp)
+  [✔] transition(::TigerDp, ::StateAtDoor, ::Symbol)
+  [✔] reward(::TigerDp, ::StateAtDoor, ::Symbol, ::StateAtDoor)
+  [✔] state_index(::TigerDp, ::StateAtDoor)
+  [✔] action_index(::TigerDp, ::Symbol)
+  [✔] actions(::TigerDp, ::StateAtDoor)
+  [✔] iterator(::Array)
+  [✔] iterator(::Array)
+  [✔] iterator(::SparseCat)
+  [✔] pdf(::SparseCat, ::StateAtDoor)
+For ordered_states(::Union{POMDPs.MDP,POMDPs.POMDP}) (in solve(::ValueIterationSolver, ::Union{POMDPs.MDP,POMDPs.POMDP})):
+  [✔] states(::TigerDp)
+For ordered_actions(::Union{POMDPs.MDP,POMDPs.POMDP}) (in solve(::ValueIterationSolver, ::Union{POMDPs.MDP,POMDPs.POMDP})):
+  [✔] actions(::TigerDp)
+
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 1   ] residual:         10 | iteration runtime:      0.837 ms, (  0.000837 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 2   ] residual:          1 | iteration runtime:      0.632 ms, (   0.00147 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 3   ] residual:          1 | iteration runtime:      0.882 ms, (   0.00235 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 4   ] residual:          1 | iteration runtime:      0.526 ms, (   0.00288 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 5   ] residual:          1 | iteration runtime:      0.564 ms, (   0.00344 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 6   ] residual:          1 | iteration runtime:      0.535 ms, (   0.00398 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 7   ] residual:          1 | iteration runtime:      0.521 ms, (    0.0045 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 8   ] residual:          1 | iteration runtime:      0.529 ms, (   0.00503 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 9   ] residual:          1 | iteration runtime:      0.500 ms, (   0.00553 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 10  ] residual:          1 | iteration runtime:      0.500 ms, (   0.00603 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 11  ] residual:          1 | iteration runtime:      0.501 ms, (   0.00653 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 12  ] residual:          1 | iteration runtime:      0.512 ms, (   0.00704 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 13  ] residual:          1 | iteration runtime:      0.563 ms, (    0.0076 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 14  ] residual:          1 | iteration runtime:      0.501 ms, (    0.0081 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 15  ] residual:          1 | iteration runtime:      0.686 ms, (   0.00879 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 16  ] residual:          1 | iteration runtime:      0.887 ms, (   0.00968 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 17  ] residual:          1 | iteration runtime:      0.528 ms, (    0.0102 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 18  ] residual:          1 | iteration runtime:      0.507 ms, (    0.0107 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 19  ] residual:          1 | iteration runtime:      0.507 ms, (    0.0112 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 20  ] residual:          1 | iteration runtime:      0.505 ms, (    0.0117 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 21  ] residual:          1 | iteration runtime:      0.504 ms, (    0.0122 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 22  ] residual:          1 | iteration runtime:      0.506 ms, (    0.0127 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 23  ] residual:          1 | iteration runtime:      0.505 ms, (    0.0132 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 24  ] residual:          1 | iteration runtime:      0.505 ms, (    0.0137 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 25  ] residual:          1 | iteration runtime:      0.505 ms, (    0.0142 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 26  ] residual:          1 | iteration runtime:      0.504 ms, (    0.0148 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 27  ] residual:          1 | iteration runtime:      0.508 ms, (    0.0153 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 28  ] residual:          1 | iteration runtime:      0.506 ms, (    0.0158 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 29  ] residual:          1 | iteration runtime:      0.506 ms, (    0.0163 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 30  ] residual:          1 | iteration runtime:      0.527 ms, (    0.0168 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 31  ] residual:          1 | iteration runtime:      4.542 ms, (    0.0213 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 32  ] residual:          1 | iteration runtime:      0.555 ms, (    0.0219 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 33  ] residual:          1 | iteration runtime:      0.526 ms, (    0.0224 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 34  ] residual:          1 | iteration runtime:      0.567 ms, (     0.023 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 35  ] residual:          1 | iteration runtime:      0.506 ms, (    0.0235 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 36  ] residual:          1 | iteration runtime:      0.746 ms, (    0.0242 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 37  ] residual:          1 | iteration runtime:      0.598 ms, (    0.0248 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 38  ] residual:          1 | iteration runtime:      0.698 ms, (    0.0255 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 39  ] residual:          1 | iteration runtime:      0.546 ms, (    0.0261 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 40  ] residual:          1 | iteration runtime:      0.714 ms, (    0.0268 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 41  ] residual:          1 | iteration runtime:      0.515 ms, (    0.0273 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 42  ] residual:          1 | iteration runtime:      0.590 ms, (    0.0279 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 43  ] residual:          1 | iteration runtime:      0.517 ms, (    0.0284 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 44  ] residual:          1 | iteration runtime:      0.620 ms, (     0.029 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 45  ] residual:          1 | iteration runtime:      0.520 ms, (    0.0296 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 46  ] residual:          1 | iteration runtime:      0.506 ms, (    0.0301 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 47  ] residual:          1 | iteration runtime:      0.511 ms, (    0.0306 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 48  ] residual:          1 | iteration runtime:      0.503 ms, (    0.0311 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, false), StateAtDoor(:right, true)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 49  ] residual:          1 | iteration runtime:      0.501 ms, (    0.0316 s total)
+++REWARD! Evaded the cat!!!
+++REWARD! Evaded the cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+LILY KILLED BY CAT BEHIND DOOR: StateAtDoor(:right, true)
+***RESTART*** Randomnized cat location!!! StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)]
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+---REWARD! Killed by cat!!!
+---REWARD! Killed by cat!!!
+HEARD IT! Now sure the cat is here!!! StateAtDoor(:right, true)
+[Iteration 50  ] residual:          1 | iteration runtime:      0.527 ms, (    0.0321 s total)
+QMDP_POLICY:
+QMDP.QMDPPolicy{TigerDp,Symbol}([-39.0 -39.0 -50.0; -144.0 -144.0 -50.0], Symbol[:open_left_door, :open_right_door, :listen_to_doors], TigerDp(-1.0, -100.0, 10.0, 0.85, 0.95, Symbol[:left, :right], StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], Symbol[:open_left_door, :open_right_door, :listen_to_doors], ObservationAtDoor[ObservationAtDoor(:left, false), ObservationAtDoor(:right, false)]))
+QMDP_UPDATE_BELIEF:
+POMDPToolbox.DiscreteUpdater{TigerDp}(TigerDp(-1.0, -100.0, 10.0, 0.85, 0.95, Symbol[:left, :right], StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], Symbol[:open_left_door, :open_right_door, :listen_to_doors], ObservationAtDoor[ObservationAtDoor(:left, false), ObservationAtDoor(:right, false)]))
+QMDP_POLICY_ALPHAS:
+[-39.0 -39.0 -50.0; -144.0 -144.0 -50.0]
+
+QMDP_TEST_BELIEF=POMDPToolbox.DiscreteBelief([0.5, 0.5]) ==> ACTION=listen_to_doors
+
+SPARSE_CAT POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [0.5, 0.5])
+^^^^^get_state_observation_reward s=StateAtDoor(:right, false) a=listen_to_doors
+???WHAT_REWAWRD???
+STATE_AT_DOOR POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}(StateAtDoor[StateAtDoor(:left, true), StateAtDoor(:right, false)], [1.0, 0.0])
+ERROR: LoadError: MethodError: Cannot `convert` an object of type POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}} to an object of type StateAtDoor
+This may have arisen from a call to the constructor StateAtDoor(...),
+since type constructors fall back to convert methods.
+Stacktrace:
+ [1] push!(::Array{StateAtDoor,1}, ::POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}) at ./array.jl:651
+ [2] simulate(::POMDPToolbox.HistoryRecorder, ::TigerDp, ::QMDP.QMDPPolicy{TigerDp,Symbol}, ::POMDPToolbox.DiscreteUpdater{TigerDp}, ::POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}, ::StateAtDoor) at /Users/pablo/.julia/v0.6/POMDPToolbox/src/simulators/history_recorder.jl:142
+ [3] simulate(::POMDPToolbox.HistoryRecorder, ::TigerDp, ::QMDP.QMDPPolicy{TigerDp,Symbol}, ::POMDPToolbox.DiscreteUpdater{TigerDp}, ::POMDPToolbox.SparseCat{Array{StateAtDoor,1},Array{Float64,1}}) at /Users/pablo/.julia/v0.6/POMDPToolbox/src/simulators/history_recorder.jl:105
+ [4] include_from_node1(::String) at ./loading.jl:576
+ [5] include(::String) at ./sysimg.jl:14
+ [6] process_options(::Base.JLOptions) at ./client.jl:305
+ [7] _start() at ./client.jl:371
+while loading /Users/pablo/git/TigerMarkovDecisionProblem/tigerV4-test.jl, in expression starting on line 87
