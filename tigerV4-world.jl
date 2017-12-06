@@ -240,7 +240,7 @@ function get_current_observation(decision_problem::TigerDp, state_at_door::State
          probability = 1.0 - decision_problem.probability_of_listening_correctly
      end
      door_observation = ObservationAtDoor(state_at_door.door_name, state_at_door.cat_is_here)
-     return ObservationPosteriorDistribution(door_observation, probability)
+     return ObservationPosteriorDistribution(decision_problem, door_observation, probability)
  end;
 
 # TODO: when is this called???

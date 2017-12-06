@@ -46,4 +46,4 @@ POMDPs.reward(decision_problem::TigerDp, door_state::StateAtDoor, action::Symbol
 POMDPs.initial_state_distribution(decision_problem::TigerDp) = StatePriorDistribution();
 
 # Return the next state sp, observation o and reward for taking action a in current state s
-POMDPs.generate_sor(decision_problem::TigerDp, state_at_door::StateAtDoor, user_action::Symbol, random_number_generator::AbstractRNG) = get_state_observation_reward(decision_problem, state_at_door, user_action, random_number_generator)
+# POMDPs.generate_sor(decision_problem::TigerDp, state_at_door::StateAtDoor, user_action::Symbol, random_number_generator::AbstractRNG) = get_state_observation_reward(decision_problem, state_at_door, user_action, random_number_generator)
