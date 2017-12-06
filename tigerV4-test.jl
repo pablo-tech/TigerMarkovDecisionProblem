@@ -44,10 +44,6 @@ println("STATE INDEX: ", POMDPs.state_index(cat_dp, test_state))
 println("CAT WORLD ACTION SPACE: ", action_space)
 println("ACTION INDEX: ", get_action_index(cat_dp, :listen_to_doors))
 
-### TEST: TRANSITION
-println("TRANSITION @TERMINATION: ", get_state_observation_reward(cat_dp, test_state, :listen_to_doors, MersenneTwister(1)))
-println("TRANSITION @TERMINATION: ", get_state_observation_reward(cat_dp, test_state, :open_right_door, MersenneTwister(1)))
-
 ### TEST: OBSERVATION
 println("CAT WORLD PRIOR OBSERVATION PDF: ", ObservationPriorDistribution(cat_dp))
 println("CAT WORLD POSTERIOR STATE PDF: ", ObservationPosteriorDistribution(cat_dp, observation_space[1], 0.68))
@@ -110,23 +106,23 @@ qmdp_simulated_history = simulate(qmdp_history_simulator, cat_dp, qmdp_policy, q
 #
 #
 # ############################################## SIMULATE
-#
-# ## SIMULATE
-# t=1
-# for (s, b, a, r, sp, o) in qmdp_simulated_history
-#      println("t=",t, "\t", "s=$s, b=$(b), a=$a, o=$o, r=$r", "\n")
-#
-#     # println("t=",t, "\t", "s=$s, b=$(b.b), a=$a, o=$o, r=$r", "\n")
-# #    state = state_name[s]
-# #    println("\t(b,s) believe_where[L,R]=$(b.b) <==> actually_where=", s)
+
+## SIMULATE
+t=1
+for (s, b, a, r, sp, o) in qmdp_simulated_history
+     println("t=",t, "\t", "s=$s, b=$(b), a=$a, o=$o, r=$r", "\n")
+
+     # println("t=",t, "\t", "s=$s, b=$(b.b), a=$a, o=$o, r=$r", "\n")
+#     state = state_name[s]
+#     println("\t(b,s) believe_where[L,R]=$(b.b) <==> actually_where=", s)
 #     t+=1
 # #    println("t=",t)
 # #    println("\t(a)=", a)
 # #    println("\t(o)=", o)
-# end
-#
-#
-#
+end
+
+
+
 # #for (s, a, o, r) in stepthrough(cat_dp, policy, "s,a,o,r", max_steps=10)
 # #    println("in state $s")
 # #    println("took action $o")

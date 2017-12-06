@@ -243,13 +243,6 @@ function get_current_observation(decision_problem::TigerDp, state_at_door::State
      return ObservationPosteriorDistribution(decision_problem, door_observation, probability)
  end;
 
-# TODO: when is this called???
-function get_current_observation(decision_problem::TigerDp, state_at_door::SparseCat)
-     println("STATE_AT_DOOR ", state_at_door)
-    # TODO: implement, how?
-     return SparseCat(decision_problem.observation_space, [0.3,0.7])
-end
-
 
 ############################################## REWARD
 
@@ -279,11 +272,11 @@ function get_reward(decision_problem::TigerDp, door_state::StateAtDoor, user_act
 end
 
 # TODO: when is this called???
-function get_reward(decision_problem::TigerDp, door_state::SparseCat, user_action::Symbol)
-    println("???WHAT_REWAWRD???")
-    # TODO: implement, how?
-    return 0.0
-end
+#function get_reward(decision_problem::TigerDp, door_state::SparseCat, user_action::Symbol)
+#    println("???WHAT_REWAWRD???")
+#    # TODO: implement, how?
+#    return 0.0
+#end
 
 ############################################## TRANSITION
 
@@ -316,10 +309,10 @@ end;
 
 # Return the next state sp, observation o and reward for taking action a in current state s
 # (sp, o, r) = POMDPs.generate_sor(pomcp.problem, s, a, sol.rng)
-function get_state_observation_reward(decision_problem::TigerDp, state_at_door::StateAtDoor, user_action::Symbol, random_number_generator::AbstractRNG)
-    println("^^^^^get_state_observation_reward ", "s=",state_at_door, " a=", user_action)
-    state_at_door = get_state_prime(decision_problem, state_at_door, user_action)
-    action_reward = get_reward(decision_problem, state_at_door, user_action)
-    observation_at_door = get_current_observation(decision_problem, state_at_door)
-    (state_at_door, observation_at_door, action_reward)
-end
+#function get_state_observation_reward(decision_problem::TigerDp, state_at_door::StateAtDoor, user_action::Symbol, random_number_generator::AbstractRNG)
+#    println("^^^^^get_state_observation_reward ", "s=",state_at_door, " a=", user_action)
+#    state_at_door = get_state_prime(decision_problem, state_at_door, user_action)
+#    action_reward = get_reward(decision_problem, state_at_door, user_action)
+#    observation_at_door = get_current_observation(decision_problem, state_at_door)
+#    (state_at_door, observation_at_door, action_reward)
+#end
