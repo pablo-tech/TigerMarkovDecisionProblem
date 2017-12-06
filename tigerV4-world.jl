@@ -1,4 +1,5 @@
 ### REFERENCES
+# Intro to the tiger problem https://www.techfak.uni-bielefeld.de/~skopp/Lehre/STdKI_SS10/POMDP_tutorial.pdf
 # Beliefs, Distributions, Model, Policies, Simulators https://github.com/JuliaPOMDP/POMDPToolbox.jl
 # POMDPs.jl API http://juliapomdp.github.io/POMDPs.jl/latest/api/#POMDPs.state_index
 # Tutorial Tiger POMDP http://nbviewer.jupyter.org/github/sisl/POMDPs.jl/blob/master/examples/Tiger.ipynb
